@@ -1,18 +1,40 @@
-## Getting Started
+SISTEM ALAT MUSIK
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Deskripsi Tugas Kelompok
 
-## Folder Structure
+Program Java sederhana yang mendemonstrasikan 4 konsep Object-Oriented Programming (OOP) menggunakan sistem manajemen alat musik.
 
-The workspace contains two folders by default, where:
+Konsep OOP yang Diimplementasikan
+1. INHERITANCE (Pewarisan)
+- Kelas Abstract: AlatMusik sebagai parent class
+- Subclass: Gitar dan Drum mewarisi dari AlatMusik
+- Atribut yang Diwarisi: nama, harga
+- Method yang Diwarisi: getInfo(), getNama(), getHarga()
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+3. POLYMORPHISM (Banyak Bentuk)
+- Method Overriding: mainkan() dan bawa() diimplementasi berbeda di setiap subclass
+- Array Polymorphism: Array AlatMusik[] dapat menampung berbagai subclass
+- Runtime Polymorphism: Pemanggilan method disesuaikan dengan tipe objek sebenarnya
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+4. INTERFACE
+- Interface: BisaDiBawa mendefinisikan kontrak method bawa()
+- Implementasi: Class AlatMusik mengimplementasi interface, subclass wajib override method bawa()
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+5. ARRAY
+- Array of Objects: AlatMusik[] inventaris menyimpan kumpulan alat musik
+- Type Checking: Menggunakan instanceof untuk mengakses method khusus
+- Array Operations: Looping, filtering, dan perhitungan pada array
 
-## Dependency Management
+Alur Program:
+1. Inisialisasi Array - Membuat array berisi berbagai alat musik
+2. Demonstrasi Inheritance - Menampilkan informasi menggunakan method warisan
+3. Demonstrasi Polymorphism - Memainkan alat musik dengan behavior berbeda
+4. Demonstrasi Interface - Menunjukkan cara membawa yang berbeda
+5. Operasi Array - Type checking dan perhitungan statistik
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Hasil Demonstrasi
+Program berhasil menunjukkan:
+- Code Reusability melalui inheritance
+- Flexibility melalui polymorphism
+- Contract Enforcement melalui interface
+- Data Management melalui array operations
